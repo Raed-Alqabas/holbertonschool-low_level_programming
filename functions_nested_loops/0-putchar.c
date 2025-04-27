@@ -1,25 +1,22 @@
 #include "main.h"
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
- * main - start of the program
+ * main - Entry point of the program
  *
- * Return: will return 0
+ * Description: Prints _putchar followed by a new line.
+ *
+ * Return: (0) upon successful execution.
  */
 
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	int i;
+	char str[] = "_putchar";
 
+	for (i = 0 ; str[i] != '\0' ; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 	return (0);
-}}
+}
